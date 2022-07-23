@@ -1,0 +1,161 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-kerning: auto;
+  }
+  html {
+    font-size: 10pt;
+    line-height: 1.4;
+    font-weight: 400;
+    font-family: 'Source Sans Pro', 'Open Sans', Roboto, 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', 'Myriad Pro', 'Segoe UI', Myriad, Helvetica, 'Lucida Grande', 'DejaVu Sans Condensed', 'Liberation Sans', 'Nimbus Sans L', Tahoma, Geneva, Arial, sans-serif;
+    -webkit-text-size-adjust: 100%;
+    
+  }
+
+ 
+
+  body {
+    margin: 0;
+    background: #eee;
+  }
+  section {
+    height: 40vh;
+    background: url(head.png) no-repeat center/102% ;
+
+  }
+  section span {
+    margin: 0;
+    font-size: 400%;
+    text-align: center;
+    line-height: 1;
+    padding-top: calc(20vh - 20pt);
+    display: block;
+    font-weight: 700;
+    color: #eee;
+  }
+  header {
+    width: 100%;
+    padding: 1em;
+    font-size: 140%;
+    position: absolute;
+    top: 40vh;
+    left: 0;
+    transition: opacity .2s ease-in-out;
+    text-align: center;
+  }
+  header h1 {
+    font-weight: 600;
+    display: inline;
+    margin: 0;
+    padding: 0;
+    font-size: inherit;
+  }
+  nav a {
+    display: inline-block;
+    outline: none;
+    text-decoration: none;
+    opacity: .7;
+    padding: 0 .5em;
+    color: black;
+    transition: opacity .2s ease-in-out;
+  }
+  nav a:hover,
+  nav a:focus {
+    opacity: 1;
+  }
+  article {
+    margin: 5em auto 0;
+    padding: 1em;
+    font-size: 140%;
+    max-width: 800px;
+    background: white;
+    box-shadow: rgba(0,0,0,.05) 0 3px 15px;
+  }
+  article p {
+    margin: 0;
+    color: #333;
+  }
+  article p + p {
+    margin-top: .7em;
+  }
+  @media (min-width: 500px) {
+    header {
+      text-align: left;
+    }
+    nav {
+      float: right;
+    }
+    article {
+      margin: 3.5em auto 0;
+      padding: 2em;
+    }
+  }
+  @media (min-width: 800px) {
+    article {
+      margin: 3.5em auto;
+    }
+  }
+  
+  /* And here's the magic! EQCSS.js required */
+  @element html, body and (min-scroll-y: 100vh) {
+    header {
+      position: fixed;
+      top: 0;
+      background: white;
+      box-shadow: rgba(0,0,0,.05) 0 3px 15px;
+    }
+  }A
+
+  .hola{
+    padding-top: 40px;
+    display: grid;
+  place-content: center;
+
+  }
+  .wrapper{
+    text-align: center;
+    padding: 3px 10px;
+  border: #000000 5px solid;
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  margin: 20px;
+
+  }
+  .nogaleras{
+    
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    
+  }
+  
+
+  .nogaleras img{
+    width: 40px;
+  }
+  h2{
+    font-size: 10px;
+  }
+  .nogaleras img{
+    width: 33%;
+    padding-bottom: 20px;
+  }
+  .logo{
+    width: 200px;
+  }
+
+  .rmn{
+    width: 300px;
+ margin: 70%;
+ margin-top: -1000px;
+  }
+ 
+  
+  #rmna{
+    width: 300px;
+margin-top:-500px ;
+margin-left: 400px;
+  }
